@@ -65,6 +65,7 @@ admin,' OR 1=1 --
 ```
 
 Each row provides values for `§1§`, `§2§`, ...
+Each row is ONE request, there is a `generate_payloads.py` in this repo to help with creating these rows.
 
 ---
 
