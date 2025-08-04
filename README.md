@@ -17,7 +17,7 @@ fuzz HTTP requests with multi-position payloads, save full responses, and option
 ## Usage
 
 ```bash
-python intrude.py \
+python pytruder.py \
   -r request.txt \
   -p generated_payloads.csv \
   -o outdir \
@@ -92,7 +92,7 @@ Each row provides values for `§1§`, `§2§`, ...
 ## Example: SQLi Fuzz
 
 ```bash
-python intrude.py -r login.req -p sqli.csv -o out --base-url http://10.10.10.10 \
+python pytruder.py -r login.req -p sqli.csv -o out --base-url http://10.10.10.10 \
   --grep "syntax error" --csv output.csv --delay 0.25
 ```
 
